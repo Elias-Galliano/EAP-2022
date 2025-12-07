@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz EAP 2022 - 3º Sargento BM Combatente</title>
+    <title>Quiz EAP 2022 - 3º Sargento QPBM</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -710,13 +710,13 @@
                     </div>
                     <div class="logo-text">
                         <h1>Quiz EAP 2022</h1>
-                        <div class="subtitle">3º Sargento BM Combatente</div>
+                        <div class="subtitle">3º Sargento QPBM - Corpo de Bombeiros Militar de Minas Gerais</div>
                     </div>
                 </div>
 
                 <div class="welcome-card">
-                    <h2><i class="fas fa-fire"></i> Bem-vindo ao Quiz EAP 2022!</h2>
-                    <p>Teste seus conhecimentos para o Exame de Aptidão Profissional do Corpo de Bombeiros Militar de Minas Gerais com 50 questões baseadas no conteúdo oficial.</p>
+                    <h2><i class="fas fa-fire"></i> Simulado EAP 2022 - 3º Sargento QPBM</h2>
+                    <p>Teste seus conhecimentos para o Exame de Aptidão Profissional 2022 do Corpo de Bombeiros Militar de Minas Gerais com questões oficiais da prova. Questões anuladas foram excluídas conforme gabarito.</p>
                 </div>
 
                 <div class="cta-section">
@@ -727,11 +727,11 @@
                     <div class="features">
                         <div class="feature">
                             <i class="fas fa-star" style="color: #4cc9f0;"></i>
-                            <span>50 Perguntas</span>
+                            <span>47 Questões Oficiais</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle" style="color: #f8961e;"></i>
-                            <span>Feedback Imediato</span>
+                            <span>Gabarito Oficial</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-graduation-cap" style="color: #f94144;"></i>
@@ -747,9 +747,9 @@
             <div class="about-card">
                 <h2 class="card-title"><i class="fas fa-info-circle"></i> Sobre o EAP 2022</h2>
                 <div class="card-content">
-                    <p>O Exame de Aptidão Profissional (EAP) 2022 é destinado aos militares do Corpo de Bombeiros Militar de Minas Gerais (CBMMG) que buscam progressão para a graduação de 3º Sargento BM Combatente.</p>
-                    <p>A prova contém 50 questões objetivas distribuídas em três áreas de conhecimento: Legislação Institucional, Conhecimentos Jurídicos e Conhecimentos Profissional.</p>
-                    <p><span class="highlight">Duração: 4 horas</span> - Prova sem consulta.</p>
+                    <p>O Exame de Aptidão Profissional (EAP) 2022 foi aplicado aos militares do Corpo de Bombeiros Militar de Minas Gerais (CBMMG) que buscaram progressão para a graduação de 3º Sargento QPBM.</p>
+                    <p>A prova original continha 50 questões objetivas distribuídas em três áreas de conhecimento. Este simulado contém as 47 questões válidas, excluindo as anuladas (questões 5, 13 e 15).</p>
+                    <p><span class="highlight">Duração original: 240 minutos</span> - Prova sem consulta.</p>
                 </div>
             </div>
 
@@ -760,7 +760,7 @@
                         <li><i class="fas fa-check"></i> <strong>Legislação Institucional:</strong> Questões 1 a 15</li>
                         <li><i class="fas fa-check"></i> <strong>Conhecimentos Jurídicos:</strong> Questões 16 a 30</li>
                         <li><i class="fas fa-check"></i> <strong>Conhecimentos Profissionais:</strong> Questões 31 a 50</li>
-                        <li><i class="fas fa-check"></i> <strong>Total:</strong> 50 questões objetivas</li>
+                        <li><i class="fas fa-check"></i> <strong>Total:</strong> 47 questões válidas (excluídas as anuladas)</li>
                         <li><i class="fas fa-check"></i> <strong>Material:</strong> Prova sem consulta</li>
                     </ul>
                 </div>
@@ -771,7 +771,7 @@
         <div class="quiz-section" id="quiz-section">
             <div class="progress-container">
                 <div class="progress-header">
-                    <div class="progress-text" id="progress-text">Pergunta 1 de 50</div>
+                    <div class="progress-text" id="progress-text">Pergunta 1 de 47</div>
                 </div>
                 <div class="progress-bar">
                     <div class="progress" id="quiz-progress"></div>
@@ -817,18 +817,18 @@
             <div class="message" id="message"></div>
 
             <button id="restart-btn" style="background: var(--success);">
-                <i class="fas fa-redo"></i> Fazer Quiz Novamente
+                <i class="fas fa-redo"></i> Refazer Quiz
             </button>
         </div>
     </div>
 
     <script>
         // =============================================
-        // BANCO DE PERGUNTAS - EAP 2022 (50 QUESTÕES)
+        // BANCO DE PERGUNTAS - EAP 2022 (QUESTÕES VÁLIDAS)
         // =============================================
 
         const allQuestions = [
-            // LEGISLAÇÃO INSTITUCIONAL (Questões 1-15)
+            // LEGISLAÇÃO INSTITUCIONAL (Questões 1-15, excluindo anuladas 5 e 13 e 15)
             {
                 id: 1,
                 question: "Conforme a Lei Complementar nº 54/1999, que dispõe sobre a Organização Básica do Corpo de Bombeiros Militar de Minas Gerais, todas as alternativas a seguir estão corretas, EXCETO.",
@@ -839,21 +839,21 @@
                     "São de caráter permanente a Comissão de Promoções de Oficiais, presidida pelo Comandante-Geral da Corporação, e a Comissão de Promoções de Praças, presidida pelo Diretor de Recursos Humanos ou equivalente."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está incorreta, pois as Unidades de Direção Intermediária não são responsáveis pelo planejamento geral, mas sim pela coordenação e supervisão das atividades operacionais.",
+                explanation: "A alternativa C está incorreta porque as Unidades de Direção Intermediária não são responsáveis pelo planejamento geral, mas sim pela execução das diretrizes estabelecidas pela direção geral.",
                 difficulty: "medium",
                 category: "Legislação"
             },
             {
                 id: 2,
-                question: "Conforme o Decreto Estadual nº 43.194/2003, que contém o regulamento das Medalhas do Corpo de Bombeiros Militar de Minas Gerais, analise as afirmativas a seguir, atribuindo 'V' para afirmativa VERDADEIRA, 'F' para afirmativa FALSA e, em seguida, marque a alternativa CORRETA que apresenta a SEQUÊNCIA CORRESPONDENTE. ( ) A Medalha do Mérito Profissional, destina-se a galardear atos de bravura e ações meritórias ou relevantes serviços prestados na atividade-meio, por servidores da ativa, da reserva ou reformados do Corpo de Bombeiros Militar de Minas Gerais. ( ) A Medalha da Ordem do Mérito Imperador D. Pedro II, Medalha do Mérito Militar, Medalha do Mérito Profissional e Medalha do Mérito Intelectual serão usadas pendente no peito do lado esquerdo. ( ) O Conselho das Medalhas da Ordem do Mérito Imperador D. Pedro II e do Mérito Profissional será composto pelos Coronéis que integram o Alto Comando do CBMMG, cabendo ao Comandante-Geral nomeá-lo e presidi-lo. ( ) A Medalha do Mérito Militar será gradual e sucessiva, isto é, bronze, prata e ouro, sendo vedada a concessão da medalha de grau superior ao militar que não tenha feito jus ao recebimento da anterior.",
+                question: "Conforme o Decreto Estadual nº 43.194/2003, que contém o regulamento das Medalhas do Corpo de Bombeiros Militar de Minas Gerais, analise as afirmativas a seguir, atribuindo 'V' para afirmativa VERDADEIRA, 'F' para afirmativa FALSA e, em seguida, marque a alternativa CORRETA que apresenta a SEQUÊNCIA CORRESPONDENTE.<br><br>( ) A Medalha do Mérito Profissional, destina-se a galardear atos de bravura e ações meritórias ou relevantes serviços prestados na atividade-meio, por servidores da ativa, da reserva ou reformados do Corpo de Bombeiros Militar de Minas Gerais.<br>( ) A Medalha da Ordem do Mérito Imperador D. Pedro II, Medalha do Mérito Militar, Medalha do Mérito Profissional e Medalha do Mérito Intelectual serão usadas pendente no peito do lado esquerdo.<br>( ) O Conselho das Medalhas da Ordem do Mérito Imperador D. Pedro II e do Mérito Profissional será composto pelos Coronéis que integram o Alto Comando do CBMMG, cabendo ao Comandante-Geral nomeá-lo e presidi-lo.<br>( ) A Medalha do Mérito Militar será gradual e sucessiva, isto é, bronze, prata e ouro, sendo vedada a concessão da medalha de grau superior ao militar que não tenha feito jus ao recebimento da anterior.",
                 options: [
-                    "V,F,V,V",
-                    "V,V,F,V",
-                    "F,F,V,V",
-                    "V,F,F,F"
+                    "V,F,V,V.",
+                    "V,V,F,V.",
+                    "F,F,V,V.",
+                    "V,F,F,F."
                 ],
                 correct: 0,
-                explanation: "A sequência correta é V,F,V,V. A segunda afirmativa é falsa porque as medalhas são usadas no lado direito do peito, não no esquerdo.",
+                explanation: "Sequência: V,F,V,V. A primeira afirmativa está correta; a segunda é falsa (as medalhas são usadas no lado direito); a terceira é verdadeira; a quarta é verdadeira.",
                 difficulty: "hard",
                 category: "Legislação"
             },
@@ -867,7 +867,7 @@
                     "Para a concessão de recompensas as autoridades devem, nos diversos níveis, atentar para os princípios da proporcionalidade, individualidade, oportunidade, merecimento e justiça."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está incorreta, pois os Comandantes de Companhia e Pelotão destacados não têm competência para conceder a Menção Elogiosa Escrita, apenas a Nota Meritória e Dispensa do Serviço por até 03 dias.",
+                explanation: "A alternativa C está incorreta porque os Comandantes de Companhia e Pelotão destacados não têm competência para conceder todas as recompensas mencionadas. A Menção Elogiosa Escrita, por exemplo, tem requisitos específicos de competência.",
                 difficulty: "medium",
                 category: "Legislação"
             },
@@ -881,24 +881,11 @@
                     "O Comandante-Geral poderá conceder licença, pelo máximo de 3 (três) meses ao militar por motivo de doença na pessoa de seu pai, mãe, cônjuge não separado legalmente ou filhos."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está incorreta, pois o atestado do médico da Unidade não é o único documento que pode comprovar a necessidade da licença. Pode ser aceito atestado de médico particular devidamente reconhecido.",
+                explanation: "A alternativa C está incorreta porque o atestado médico pode ser emitido por médico particular ou do sistema de saúde, não necessariamente pelo médico da Unidade.",
                 difficulty: "medium",
                 category: "Legislação"
             },
-            {
-                id: 5,
-                question: "Sobre o pagamento do abono de férias anuais, é CORRETO afirmar.",
-                options: [
-                    "Na situação de férias anuais cassadas por absoluta necessidade de serviço, caso não sejam gozadas até 2 (dois) anos, perde-se o direito ao abono não lançado até o 12º mês após da aquisição.",
-                    "O abono relativo às férias será efetuado integralmente, no primeiro ou segundo período de gozo, se fracionado.",
-                    "Os militares em curso de formação não fazem jus ao abono relativo às férias prêmio.",
-                    "O abono possui como base a remuneração vigente e deve ser lançado até o mês do efetivo gozo das férias."
-                ],
-                correct: 3,
-                explanation: "A alternativa D está correta, conforme estabelecido na legislação sobre férias e abono.",
-                difficulty: "medium",
-                category: "Legislação"
-            },
+            // Questão 5 foi anulada - não incluída
             {
                 id: 6,
                 question: "Conforme a Instrução Técnica de Recursos Humanos nº 225/2009, que estabelece orientações e diretrizes às Unidades do CBMMG visando uniformização e padronização de procedimentos para concessão de lançamentos de férias anuais e prêmio aos militares, as alternativas a seguir são verdadeiras, EXCETO.",
@@ -909,22 +896,22 @@
                     "Havendo férias cassadas, o lançamento de novo período de férias anuais com o lançamento do abono poderá ser efetuado sem prejuízo para o militar, e o gozo do período cassado poderá ser efetivado cumulativamente com o novo período de férias."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está incorreta, pois o gozo do período cassado não pode ser efetivado cumulativamente com o novo período de férias.",
-                difficulty: "hard",
+                explanation: "A alternativa D está incorreta porque férias cassadas não podem ser gozadas cumulativamente com novo período de férias. O período cassado deve ser reagendado, mas não acumulado.",
+                difficulty: "medium",
                 category: "Legislação"
             },
             {
                 id: 7,
-                question: "Conforme a Resolução nº 596/2015, que dispõe sobre os procedimentos para movimentação dos militares do Corpo de Bombeiros Militar de Minas Gerais, analise as afirmativas a seguir, atribuindo 'V' para afirmativa VERDADEIRA, 'F' para afirmativa FALSA e, em seguida, marque a alternativa CORRETA que apresenta a SEQUÊNCIA CORRESPONDENTE. ( ) A movimentação por conveniência da disciplina será realizada a qualquer tempo, de ofício ou por solicitação fundamentada do Corregedor, Comandante ou Chefe do militar, em conformidade com o Código de Ética e Disciplina dos Militares de Minas Gerais. ( ) A movimentação do militar não interromperá o gozo de férias, em hipótese alguma, sendo que o desligamento será efetivado somente após o término do respectivo período. ( ) Movimentação é a denominação genérica do ato administrativo que classifica, transfere, nomeia ou designa o militar. ( ) No caso de militares cônjuges, sendo um dos militares movimentado por necessidade do serviço, o consorte será obrigatoriamente movimentado para a mesma localidade, também por necessidade do serviço.",
+                question: "Conforme a Resolução nº 596/2015, que dispõe sobre os procedimentos para movimentação dos militares do Corpo de Bombeiros Militar de Minas Gerais, analise as afirmativas a seguir, atribuindo 'V' para afirmativa VERDADEIRA, 'F' para afirmativa FALSA e, em seguida, marque a alternativa CORRETA que apresenta a SEQUÊNCIA CORRESPONDENTE.<br><br>( ) A movimentação por conveniência da disciplina será realizada a qualquer tempo, de ofício ou por solicitação fundamentada do Corregedor, Comandante ou Chefe do militar, em conformidade com o Código de Ética e Disciplina dos Militares de Minas Gerais.<br>( ) A movimentação do militar não interromperá o gozo de férias, em hipótese alguma, sendo que o desligamento será efetivado somente após o término do respectivo período.<br>( ) Movimentação é a denominação genérica do ato administrativo que classifica, transfere, nomeia ou designa o militar.<br>( ) No caso de militares cônjuges, sendo um dos militares movimentado por necessidade do serviço, o consorte será obrigatoriamente movimentado para a mesma localidade, também por necessidade do serviço.",
                 options: [
-                    "V, F, V, F",
-                    "V, V, F, F",
-                    "V, V, V, V",
-                    "F, V, F, V"
+                    "V, F, V, F.",
+                    "V, V, F, F.",
+                    "V, V, V, V.",
+                    "F, V, F, V."
                 ],
                 correct: 0,
-                explanation: "A sequência correta é V, F, V, F. A segunda afirmativa é falsa porque a movimentação pode interromper o gozo de férias em casos específicos. A quarta afirmativa é falsa porque não há obrigatoriedade de movimentação do consorte para a mesma localidade.",
-                difficulty: "hard",
+                explanation: "Sequência: V, F, V, F. A primeira é verdadeira; a segunda é falsa (a movimentação pode interromper férias em casos específicos); a terceira é verdadeira; a quarta é falsa (não é obrigatória a movimentação do cônjuge).",
+                difficulty: "medium",
                 category: "Legislação"
             },
             {
@@ -937,8 +924,8 @@
                     "Não há necessidade de instauração de RIP antecedendo uma Sindicância Administrativa Disciplinar (SAD), havendo elementos suficientes que indiquem a autoria e materialidade da conduta."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está incorreta, pois em casos de transgressão disciplinar residual, não é necessária a instauração de um RIP, mas sim a adoção dos procedimentos específicos previstos na legislação.",
-                difficulty: "medium",
+                explanation: "A alternativa B está incorreta porque, em casos de transgressão disciplinar residual já apurada em APF, IPM ou processo judicial, não é necessário instaurar um RIP, pois já há elementos suficientes para a instauração direta de processo disciplinar.",
+                difficulty: "hard",
                 category: "Legislação"
             },
             {
@@ -951,7 +938,7 @@
                     "O usuário dos meios de comunicação institucionais possui a obrigação de acessar as caixas de correio eletrônico, a Intranet BM e o SIM (Sistema Intranet de Mensagens), no mínimo, uma vez durante o expediente, seja administrativo ou operacional."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está incorreta, pois não há obrigatoriedade de acesso diário aos meios de comunicação institucionais durante o expediente operacional, apenas durante o administrativo.",
+                explanation: "A alternativa D está incorreta porque não existe uma obrigação regulamentar de acessar os sistemas de comunicação uma vez durante o expediente. O acesso deve ser feito conforme a necessidade do serviço.",
                 difficulty: "easy",
                 category: "Legislação"
             },
@@ -959,27 +946,27 @@
                 id: 10,
                 question: "A estruturação do Sistema Integrado de Segurança Pública inclui, no nível operacional, EXCETO.",
                 options: [
-                    "Centro de Comando de Operações Especiais - CCOEsp",
-                    "Disque Denúncia Unificado - DDU",
-                    "Gabinete de Crise do Sistema Integrado de Segurança Pública",
-                    "Centro Integrado de Comando e Controle - CICC"
+                    "Centro de Comando de Operações Especiais - CCOEsp.",
+                    "Disque Denúncia Unificado - DDU.",
+                    "Gabinete de Crise do Sistema Integrado de Segurança Pública.",
+                    "Centro Integrado de Comando e Controle - CICC."
                 ],
                 correct: 0,
-                explanation: "A alternativa A está incorreta, pois o Centro de Comando de Operações Especiais (CCOEsp) não faz parte do nível operacional do Sistema Integrado de Segurança Pública.",
+                explanation: "A alternativa A está incorreta porque o Centro de Comando de Operações Especiais (CCOEsp) não faz parte da estrutura do Sistema Integrado de Segurança Pública no nível operacional.",
                 difficulty: "medium",
                 category: "Legislação"
             },
             {
                 id: 11,
-                question: "Sobre a jornada de trabalho no CBMMG, analise as afirmativas a seguir, atribuindo 'V' para afirmativa VERDADEIRA, 'F' para afirmativa FALSA e, em seguida, marque a alternativa CORRETA que apresenta a SEQUÊNCIA CORRESPONDENTE. ( ) A carga-horária das atividades dos discentes será regulada pelas Diretrizes de Ensino Profissional. ( ) No caso de militares estudantes, cabe aos respectivos Comandantes a adequação dos horários de trabalho operacional e administrativo. ( ) Compete ao chefe direto do militar a concessão de dispensas como reconhecimento pelo trabalho realizado. ( ) A jornada de trabalho operacional dos Postos Avançados Bombeiro Militar (PABM) poderá ser adaptada a critério do Comandante da respectiva Unidade.",
+                question: "Sobre a jornada de trabalho no CBMMG, analise as afirmativas a seguir, atribuindo 'V' para afirmativa VERDADEIRA, 'F' para afirmativa FALSA e, em seguida, marque a alternativa CORRETA que apresenta a SEQUÊNCIA CORRESPONDENTE.<br><br>( ) A carga-horária das atividades dos discentes será regulada pelas Diretrizes de Ensino Profissional.<br>( ) No caso de militares estudantes, cabe aos respectivos Comandantes a adequação dos horários de trabalho operacional e administrativo.<br>( ) Compete ao chefe direto do militar a concessão de dispensas como reconhecimento pelo trabalho realizado.<br>( ) A jornada de trabalho operacional dos Postos Avançados Bombeiro Militar (PABM) poderá ser adaptada a critério do Comandante da respectiva Unidade.",
                 options: [
-                    "V, F, V, V",
-                    "F, V, F, F",
-                    "V, V, F, F",
-                    "V, V, F, V"
+                    "V, F, V, V.",
+                    "F, V, F, F.",
+                    "V, V, F, F.",
+                    "V, V, F, V."
                 ],
-                correct: 3,
-                explanation: "A sequência correta é V, V, F, V. A terceira afirmativa é falsa porque a concessão de dispensas como reconhecimento pelo trabalho realizado não compete apenas ao chefe direto, mas segue regulamentação específica.",
+                correct: 2,
+                explanation: "Sequência: V, V, F, F. A primeira é verdadeira; a segunda é verdadeira; a terceira é falsa (a concessão de dispensas tem competência definida em regulamento); a quarta é falsa (a jornada dos PABM segue regulamento específico).",
                 difficulty: "medium",
                 category: "Legislação"
             },
@@ -993,64 +980,39 @@
                     "Na análise das propostas, serão observados, dentre outros aspectos, a adequação da proposta às necessidades da Corporação e o impacto da liberação do militar pelas chefias diretas."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está incorreta, pois compete à Academia de Bombeiros Militar recepcionar todas as propostas de eventos fora da corporação, inclusive as ofertadas diretamente às Unidades do CBMMG.",
+                explanation: "A alternativa C está incorreta porque a Academia de Bombeiros Militar recepciona TODAS as propostas de eventos fora da corporação, inclusive as ofertadas diretamente às Unidades.",
                 difficulty: "medium",
                 category: "Legislação"
             },
-            {
-                id: 13,
-                question: "São requisitos para participação dos militares do CBMMG nos eventos e cursos de qualificação de natureza operacional ou teóricos, EXCETO:",
-                options: [
-                    "Possuir, no mínimo, 5 (cinco) anos de efetivo serviço a prestar à corporação, para eventos com duração superior a 1 (um) ano letivo.",
-                    "Estar classificado, no mínimo, no conceito B, com até 24 pontos negativos.",
-                    "Não ter sofrido mais de uma sanção, por transgressão disciplinar de natureza grave, nos últimos 12 (doze) meses.",
-                    "Estar aprovado no TPB (Treinamento Técnico Profissional)."
-                ],
-                correct: 0,
-                explanation: "A alternativa A está incorreta, pois não é necessário possuir 5 anos de efetivo serviço para participar de eventos com duração superior a 1 ano letivo.",
-                difficulty: "medium",
-                category: "Legislação"
-            },
+            // Questão 13 foi anulada - não incluída
             {
                 id: 14,
-                question: "Considerando a Resolução nº 809/2018 que dispõe sobre o Teste de Avaliação Física (TAF) a ser aplicado no CBMMG, analise as afirmativas a seguir, atribuindo 'V' para afirmativa VERDADEIRA, 'F' para afirmativa FALSA e, em seguida, marque a alternativa CORRETA que apresenta a SEQUÊNCIA CORRESPONDENTE. ( ) Para aprovação, e consequente obtenção da condição de apto no TAF anual e nos exames seletivos aos cursos internos, os bombeiros militares prontos nos serviços administrativos ou operacionais deverão atingir os índices de 60% no Índice Mínimo de Aprovação (IMA) e 30% no Índice Mínimo de Desempenho por Prova (IMDP). ( ) O militar inapto na Avaliação Clínica somente realizará o TAF quando cessado o impedimento e com a devida liberação médica, devendo, para isso, notificar a Administração. ( ) À militar impedida de realizar o TAF anual em razão de estar em período de gestação ou contemplada com licença maternidade será atribuída nota 6 (seis) pontos, sendo lhe atribuída a nota mínima para aprovação. ( ) Quando o militar for transferido de Organização Bombeiro Militar, a Unidade de origem fará constar no ofício de apresentação se este já foi ou não submetido ao TAF anual e a data de sua realização.",
+                question: "Considerando a Resolução nº 809/2018 que dispõe sobre o Teste de Avaliação Física (TAF) a ser aplicado no CBMMG, analise as afirmativas a seguir, atribuindo 'V' para afirmativa VERDADEIRA, 'F' para afirmativa FALSA e, em seguida, marque a alternativa CORRETA que apresenta a SEQUÊNCIA CORRESPONDENTE.<br><br>( ) Para aprovação, e consequente obtenção da condição de apto no TAF anual e nos exames seletivos aos cursos internos, os bombeiros militares prontos nos serviços administrativos ou operacionais deverão atingir os índices de 60% no Índice Mínimo de Aprovação (IMA) e 30% no Índice Mínimo de Desempenho por Prova (IMDP).<br>( ) O militar inapto na Avaliação Clínica somente realizará o TAF quando cessado o impedimento e com a devida liberação médica, devendo, para isso, notificar a Administração.<br>( ) À militar impedida de realizar o TAF anual em razão de estar em período de gestação ou contemplada com licença maternidade será atribuída nota 6 (seis) pontos, sendo lhe atribuída a nota mínima para aprovação.<br>( ) Quando o militar for transferido de Organização Bombeiro Militar, a Unidade de origem fará constar no ofício de apresentação se este já foi ou não submetido ao TAF anual e a data de sua realização.",
                 options: [
-                    "F,V,F,V",
-                    "V,V,V,V",
-                    "F,F,V,V",
-                    "V,V,F,V"
+                    "F,V,F,V.",
+                    "V,V,V,V.",
+                    "F,F,V,V.",
+                    "V,V,F,V."
                 ],
                 correct: 3,
-                explanation: "A sequência correta é V,V,F,V. A terceira afirmativa é falsa porque à militar impedida de realizar o TAF anual em razão de gestação ou licença maternidade não é atribuída nota 6 pontos automaticamente, mas sim são adotados procedimentos específicos.",
+                explanation: "Sequência: V, V, F, V. A primeira é verdadeira; a segunda é verdadeira; a terceira é falsa (gestantes e em licença maternidade têm tratamento específico, não recebem nota 6 automaticamente); a quarta é verdadeira.",
                 difficulty: "hard",
                 category: "Legislação"
             },
-            {
-                id: 15,
-                question: "De acordo com a Instrução Técnica de Corregedoria nº 14/2018, NÃO é considerado presente, doação, vantagem ou cortesia os brindes que:",
-                options: [
-                    "Sejam distribuídos por entidades de qualquer natureza a título de propaganda, divulgação habitual ou por ocasião de eventos especiais ou datas comemorativas.",
-                    "Não possuam valor comercial.",
-                    "Sejam doados através de Termo.",
-                    "Tenham valor irrisório."
-                ],
-                correct: 2,
-                explanation: "A alternativa C está incorreta, pois brindes doados através de Termo não são automaticamente excluídos da definição de presente, doação, vantagem ou cortesia.",
-                difficulty: "medium",
-                category: "Legislação"
-            },
+            // Questão 15 foi anulada - não incluída
+            
             // CONHECIMENTOS JURÍDICOS (Questões 16-30)
             {
                 id: 16,
                 question: "De acordo com a Constituição Federal de 1988 são princípios fundamentais, EXCETO.",
                 options: [
-                    "Soberania",
-                    "Cidadania",
-                    "Independência nacional",
-                    "Igualdade perante a lei"
+                    "Soberania.",
+                    "Cidadania.",
+                    "Independência nacional.",
+                    "Igualdade perante a lei."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está incorreta, pois 'Igualdade perante a lei' é um direito e garantia fundamental (art. 5º), não um princípio fundamental (art. 1º).",
+                explanation: "A alternativa D está incorreta porque 'Igualdade perante a lei' é um direito fundamental (art. 5º), não um princípio fundamental (art. 1º). Os princípios fundamentais são: soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa, e pluralismo político.",
                 difficulty: "easy",
                 category: "Jurídico"
             },
@@ -1064,7 +1026,7 @@
                     "Os nascidos na República Federativa do Brasil, ainda que de pais estrangeiros, desde que estes não estejam a serviço de seu país."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está correta, conforme estabelecido no art. 12, I, 'a' da Constituição Federal.",
+                explanation: "A alternativa D está correta conforme o art. 12, I, 'a' da CF/88: são brasileiros natos os nascidos na República Federativa do Brasil, ainda que de pais estrangeiros, desde que estes não estejam a serviço de seu país.",
                 difficulty: "easy",
                 category: "Jurídico"
             },
@@ -1072,13 +1034,13 @@
                 id: 18,
                 question: "São direitos e liberdades previstos na Declaração Universal dos Direitos Humanos, EXCETO.",
                 options: [
-                    "Direito a vida",
-                    "Direito a uma nacionalidade",
-                    "Direito a propriedade, só ou em sociedade com outros",
-                    "Direito a greve"
+                    "Direito a vida.",
+                    "Direito a uma nacionalidade.",
+                    "Direito a propriedade, só ou em sociedade com outros.",
+                    "Direito a greve."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está incorreta, pois o direito a greve não está previsto explicitamente na Declaração Universal dos Direitos Humanos.",
+                explanation: "A alternativa D está incorreta porque o direito à greve não está expressamente previsto na Declaração Universal dos Direitos Humanos de 1948. Está previsto em outros tratados internacionais de direitos humanos.",
                 difficulty: "medium",
                 category: "Jurídico"
             },
@@ -1092,7 +1054,7 @@
                     "A seu critério, o juiz decidirá o caso de acordo com a analogia, os costumes e os princípios gerais de direito."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está correta, conforme estabelecido no art. 14 da LINDB.",
+                explanation: "A alternativa C está correta conforme o art. 14 da LINDB: 'A prova dos fatos ocorridos em país estrangeiro rege-se pela lei que nele vigorar, quanto ao ônus e aos meios de produzir-se, não admitindo os tribunais brasileiros provas que a lei brasileira desconheça.'",
                 difficulty: "medium",
                 category: "Jurídico"
             },
@@ -1106,7 +1068,7 @@
                     "Não pode alegar estado de necessidade quem tinha o dever legal de enfrentar o perigo."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está correta, conforme estabelecido no art. 24, §1º do Código Penal.",
+                explanation: "A alternativa D está correta conforme o art. 24, §1º do Código Penal: 'Não pode alegar estado de necessidade quem tinha o dever legal de enfrentar o perigo.'",
                 difficulty: "medium",
                 category: "Jurídico"
             },
@@ -1120,7 +1082,7 @@
                     "Comete o crime de deserção o militar que deixa de se apresentar a autoridade competente, dentro do prazo de oito dias, contados daquele em que termina ou é cassada a licença ou agregação ou em que é declarado o estado de sítio ou de guerra."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está incorreta, pois o prazo para apresentação após a data de partida do navio ou aeronave é de 10 dias, não 8 dias.",
+                explanation: "A alternativa C está incorreta porque o prazo para apresentação após partida de navio, aeronave ou deslocamento da unidade é diferente de oito dias conforme o art. 187 do CPM.",
                 difficulty: "hard",
                 category: "Jurídico"
             },
@@ -1134,7 +1096,7 @@
                     "Diz-se o crime consumado, quando nele se reúnem todos os elementos de sua definição legal."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está correta, conforme definição de crime consumado no Código Penal Militar.",
+                explanation: "A alternativa D está correta conforme o art. 14 do CPM: 'Diz-se o crime consumado, quando nele se reúnem todos os elementos de sua definição legal.'",
                 difficulty: "medium",
                 category: "Jurídico"
             },
@@ -1148,7 +1110,7 @@
                     "O inquérito será encerrado com minucioso relatório, em que o seu encarregado mencionará as diligências feitas, as pessoas ouvidas e os resultados obtidos, com indicação do day, hora e lugar onde ocorreu o fato delituoso. Em conclusão, dirá se há infração disciplinar a punir ou indício de crime, pronunciando-se, neste último caso, justificadamente, sobre a conveniência da prisão preventiva do indiciado, nos termos legais."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está incorreta, pois a autoridade militar não pode mandar arquivar autos de inquérito por conta própria; essa decisão cabe ao juiz competente.",
+                explanation: "A alternativa B está incorreta porque a autoridade militar não pode mandar arquivar autos de inquérito por conta própria. O arquivamento deve ser requerido ao Ministério Público ou à autoridade judiciária.",
                 difficulty: "hard",
                 category: "Jurídico"
             },
@@ -1162,7 +1124,7 @@
                     "A transparência de informações, a participação e o controle social."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está incorreta, pois estabelecer conformidades de natureza técnica não é um objetivo específico da PNSB.",
+                explanation: "A alternativa B está incorreta porque estabelecer conformidades técnicas não é um objetivo da PNSB, mas sim um meio para alcançar os objetivos. Os objetivos estão relacionados à gestão, segurança, prevenção de acidentes e participação social.",
                 difficulty: "medium",
                 category: "Jurídico"
             },
@@ -1176,7 +1138,7 @@
                     "A cada mês, as barragens com muito alto potencial de dano ambiental."
                 ],
                 correct: 0,
-                explanation: "A alternativa A está correta, conforme estabelecido na Lei Estadual nº 23.291/2019.",
+                explanation: "A alternativa A está correta conforme a Lei Estadual nº 23.291/2019: barragens com baixo potencial de dano ambiental devem passar por auditoria técnica a cada três anos.",
                 difficulty: "medium",
                 category: "Jurídico"
             },
@@ -1190,7 +1152,7 @@
                     "Apenas a Corregedoria e os órgãos de controle internos poderão representar à autoridade administrativa competente para que seja instaurada investigação destinada a apurar a prática de ato de improbidade."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está incorreta, pois não apenas a Corregedoria e os órgãos de controle internos podem representar, mas também qualquer pessoa do povo.",
+                explanation: "A alternativa D está incorreta porque não apenas a Corregedoria e órgãos de controle interno podem representar. Qualquer pessoa pode representar sobre ato de improbidade, conforme art. 9º da Lei 8.429/1992.",
                 difficulty: "medium",
                 category: "Jurídico"
             },
@@ -1204,7 +1166,7 @@
                     "Assegurar a seleção da proposta apta a gerar o resultado de contratação mais vantajoso para a Administração Pública, inclusive no que se refere ao ciclo de vida do objeto, bem como tratamento isonômico entre os licitantes, bem como a justa competição."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está incorreta, pois o processo licitatório deve atender a questões formais e não busca apenas o menor preço, mas sim a proposta mais vantajosa para a Administração.",
+                explanation: "A alternativa B está incorreta porque, embora a lei busque menos burocracia, ela não prega 'não se atender a questões formais, buscando apenas obter o menor preço'. O objetivo é obter a proposta mais vantajosa, considerando vários aspectos, não apenas o preço.",
                 difficulty: "medium",
                 category: "Jurídico"
             },
@@ -1212,14 +1174,14 @@
                 id: 28,
                 question: "Conforme a Lei Federal nº 14.133/2021, é modalidade de licitação:",
                 options: [
-                    "Convite",
-                    "Menor preço",
-                    "Melhor técnica ou conteúdo artístico",
-                    "Diálogo competitivo"
+                    "Convite.",
+                    "Menor preço.",
+                    "Melhor técnica ou conteúdo artístico.",
+                    "Diálogo competitivo."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está correta, pois 'Diálogo competitivo' é uma das modalidades de licitação previstas na Lei Federal nº 14.133/2021.",
-                difficulty: "medium",
+                explanation: "A alternativa D está correta. O diálogo competitivo é uma das modalidades de licitação previstas na Lei 14.133/2021 (art. 27, III). As outras alternativas são tipos de julgamento, não modalidades.",
+                difficulty: "easy",
                 category: "Jurídico"
             },
             {
@@ -1232,7 +1194,7 @@
                     "A capacidade econômica do proprietário do estabelecimento, edificação ou área de reunião de público."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está incorreta, pois a capacidade econômica do proprietário não é critério para estabelecimento de requisitos de segurança.",
+                explanation: "A alternativa D está incorreta porque a capacidade econômica do proprietário não pode ser considerada para exigência de requisitos de segurança. A segurança deve ser assegurada independentemente da condição econômica.",
                 difficulty: "easy",
                 category: "Jurídico"
             },
@@ -1246,22 +1208,23 @@
                     "A divergência na interpretação de lei ou na avaliação de fatos e provas não configura abuso de autoridade."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está correta, conforme estabelecido na Lei de Abuso de Autoridade.",
+                explanation: "A alternativa D está correta conforme o art. 3º, §2º da Lei 13.869/2019: 'Não constitui abuso de autoridade a divergência na interpretação de lei ou na avaliação de fatos e provas.'",
                 difficulty: "medium",
                 category: "Jurídico"
             },
+            
             // CONHECIMENTOS PROFISSIONAIS (Questões 31-50)
             {
                 id: 31,
-                question: "A figura a seguir representa um dos métodos utilizados na busca e salvamento de pessoa perdida. Marque a alternativa que define CORRETAMENTE o nome do referido método. [Imagem: 300m, 100m, 300m, 200m, 400m]",
+                question: "A figura a seguir representa um dos métodos utilizados na busca e salvamento de pessoa perdida. Marque a alternativa que define CORRETAMENTE o nome do referido método. [Figura descrita: 300m, 100m, 300m, 200m, 400m]",
                 options: [
-                    "Método pente fino",
-                    "Método retangular",
-                    "Método quadrado crescente",
-                    "Método off-set"
+                    "Método pente fino.",
+                    "Método retangular.",
+                    "Método quadrado crescente.",
+                    "Método off-set."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está correta, pois o método representado na figura é o método quadrado crescente, utilizado em buscas por pessoa perdida.",
+                explanation: "A alternativa C está correta. O método quadrado crescente é caracterizado por buscar em círculos concêntricos a partir do último ponto visto, aumentando progressivamente o raio de busca.",
                 difficulty: "medium",
                 category: "Profissional"
             },
@@ -1269,14 +1232,14 @@
                 id: 32,
                 question: "Os perfis comportamentais na tentativa de suicídio foram classificados pela Instrução Técnica Operacional (ITO) nº 30 do CBMMG de maneira a reunir características semelhantes de acordo com o comportamento dos tentantes e, a partir disso, embasar posturas desejáveis pelo abordador. São perfis comportamentais, EXCETO:",
                 options: [
-                    "Agressivo",
-                    "Temerário",
-                    "Depressivo",
-                    "Psicótico"
+                    "Agressivo.",
+                    "Temerário.",
+                    "Depressivo.",
+                    "Psicótico."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está incorreta, pois 'Temerário' não é um perfil comportamental classificado pela ITO nº 30.",
-                difficulty: "medium",
+                explanation: "A alternativa B está incorreta porque 'Temerário' não é um perfil comportamental classificado na ITO 30. Os perfis são: Agressivo, Depressivo, Psicótico e Manipulador.",
+                difficulty: "easy",
                 category: "Profissional"
             },
             {
@@ -1289,36 +1252,36 @@
                     "As zonas de trabalho em serviços que envolvam eletricidade se dividem em: Zona Livre, Zona Controlada e Zona de Risco."
                 ],
                 correct: 0,
-                explanation: "A alternativa A está incorreta, pois em caso de fio energizado sobre veículo, não se deve orientar o condutor a caminhar deslizando, mas sim permanecer no veículo até que a energia seja desligada.",
-                difficulty: "hard",
+                explanation: "A alternativa A está incorreta porque, em caso de fio energizado sobre veículo, a orientação correta é que o ocupante permaneça dentro do veículo até que a energia seja desligada. Não deve sair caminhando, pois pode sofrer descarga elétrica por diferença de potencial.",
+                difficulty: "medium",
                 category: "Profissional"
             },
             {
                 id: 34,
                 question: "As luvas isolantes são consideradas equipamentos de proteção individual, e são essenciais às atividades que envolvam eletricidade. Ao utilizar este EPI, deve-se atentar para o nível de isolamento que ela possui, uma vez que, níveis de tensão elevados exigem nível de isolamento alto. A cor da etiqueta das luvas relaciona-se à tensão de isolamento do produto. Neste sentido, é CORRETO afirmar que uma luva com ETIQUETA VERDE possui 'Tensão Máxima de Uso (volts)' de:",
                 options: [
-                    "1000 volts",
-                    "2.500 volts",
-                    "26.500 volts",
-                    "36.000 volts"
+                    "1000 volts.",
+                    "2.500 volts.",
+                    "26.500 volts.",
+                    "36.000 volts."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está correta, pois luvas com etiqueta verde possuem tensão máxima de uso de 26.500 volts.",
+                explanation: "A alternativa C está correta. Luvas com etiqueta verde têm tensão máxima de uso de 26.500 volts, conforme norma técnica de EPI para eletricidade.",
                 difficulty: "medium",
                 category: "Profissional"
             },
             {
                 id: 35,
-                question: "Os trajes para atuação em emergências com produtos perigosos são classificados conforme seu grau de proteção. Em relação ao uso do traje de Nível A, julgue as alternativas a seguir e, em seguida, assinale a alternativa CORRETA. I - Substância é identificada e requer o mais alto nível de proteção para o sistema respiratório, pele e olhos. II - Houver suspeita da presença de produtos com alto potencial de danos à pele e o possível contato por existir vapores, gases ou partículas em suspensão. III - Trabalho a ser realizado sem exigência do uso de máscara autônoma de respiração. IV - Leituras em equipamentos indicando concentrações perigosas de gases ou vapores na atmosfera (valor acima do IDLH – Imediatamente perigoso à vida e a saúde);",
+                question: "Os trajes para atuação em emergências com produtos perigosos são classificados conforme seu grau de proteção. Em relação ao uso do traje de Nível A, julgue as alternativas a seguir e, em seguida, assinale a alternativa CORRETA.<br><br>I - Substância é identificada e requer o mais alto nível de proteção para o sistema respiratório, pele e olhos.<br>II - Houver suspeita da presença de produtos com alto potencial de danos à pele e o possível contato por existir vapores, gases ou partículas em suspensão.<br>III - Trabalho a ser realizado sem exigência do uso de máscara autônoma de respiração.<br>IV - Leituras em equipamentos indicando concentrações perigosas de gases ou vapores na atmosfera (valor acima do IDLH – Imediatamente perigoso à vida e a saúde);",
                 options: [
-                    "Apenas as afirmativas I e II são verdadeiras",
-                    "Apenas as afirmativas I, II e IV são verdadeiras",
-                    "Nenhuma das afirmativas é verdadeira",
-                    "Todas as afirmativas são verdadeiras"
+                    "Apenas as afirmativas I e II são verdadeiras.",
+                    "Apenas as afirmativas I, II e IV são verdadeiras.",
+                    "Nenhuma das afirmativas é verdadeira.",
+                    "Todas as afirmativas são verdadeiras."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está correta, pois as afirmativas I, II e IV são verdadeiras em relação ao uso do traje de Nível A. A afirmativa III é falsa, pois o traje de Nível A exige o uso de máscara autônoma de respiração.",
-                difficulty: "hard",
+                explanation: "As afirmativas I, II e IV são verdadeiras. A III é falsa porque o traje de Nível A exige obrigatoriamente o uso de máscara autônoma de respiração (SCBA).",
+                difficulty: "medium",
                 category: "Profissional"
             },
             {
@@ -1331,35 +1294,35 @@
                     "Em ocorrências que envolva a necessidade da entrada do Bombeiro Militar em locais como: vertedouros de barragens, barragens de rejeitos, lagoas tóxicas de refinarias, mineradoras e indústrias, ou locais que apresentam alto risco de letalidade para os Bombeiros Militares, a entrada na água deve ser evitada."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está incorreta, pois para a decisão da aplicação das manobras de RCP, não se deve avaliar o método utilizado para retirada da vítima, mas sim as condições clínicas da vítima.",
-                difficulty: "medium",
+                explanation: "A alternativa B está incorreta porque a decisão de aplicar RCP não deve ser baseada no método de retirada da vítima, mas sim no estado clínico da vítima (parada cardiorrespiratória) e no tempo de submersão.",
+                difficulty: "hard",
                 category: "Profissional"
             },
             {
                 id: 37,
                 question: "Os sinais sonoros (toques) e sinais luminosos, utilizados para acionamento das guarnições, obedecem uma sequência de cores/toques. Neste sentido é CORRETO afirmar que o sinal luminoso de cor VERDE seguido de 02 (dois) toques de intensidade curta refere-se ao acionamento de:",
                 options: [
-                    "Resgate",
-                    "1º Socorro",
-                    "1º Salvamento",
-                    "2º Salvamento"
+                    "Resgate.",
+                    "1º Socorro.",
+                    "1º Salvamento.",
+                    "2º Salvamento."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está correta, pois sinal luminoso verde seguido de 02 toques curtos refere-se ao acionamento do 2º Salvamento.",
-                difficulty: "medium",
+                explanation: "A alternativa D está correta. Sinal verde + 2 toques curtos corresponde ao 2º Salvamento conforme padronização do CBMMG.",
+                difficulty: "easy",
                 category: "Profissional"
             },
             {
                 id: 38,
-                question: "A figura a seguir representa uma marcação estrutural completa (dados internos e externos) utilizada nas atividades de Busca e Resgate em Estruturas Colapsadas (BREC) do CBMMG - nível básico. O numeral 4 (quatro) localizado do lado esquerdo/externo do quadrado a seguir REPRESENTA: [Imagem: ENERGIA ELÉTRICA/GLP/RÉPLICA # G BREC MG 30 150630MAI2019 191700MAI2019 ## 34? SALA 02]",
+                question: "A figura a seguir representa uma marcação estrutural completa (dados internos e externos) utilizada nas atividades de Busca e Resgate em Estruturas Colapsadas (BREC) do CBMMG - nível básico. O numeral 4 (quatro) localizado do lado esquerdo/externo do quadrado a seguir REPRESENTA: [Descrição da figura: Quadrado com 'ENERGIA ELÉTRICA/GLP/RÉPLICA' no topo, '# G' à esquerda, 'BREC MG 30' no centro, '150630MAI2019' e '191700MAI2019' abaixo, '34? SALA 02' na parte inferior]",
                 options: [
-                    "Número de equipes",
-                    "Número de ambientes vistoriados",
-                    "Número de vítimas resgatadas",
-                    "Nenhuma das alternativas anteriores"
+                    "Número de equipes.",
+                    "Número de ambientes vistoriados.",
+                    "Número de vítimas resgatadas.",
+                    "Nenhuma das alternativas anteriores."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está correta, pois o numeral 4 localizado do lado esquerdo/externo do quadrado representa o número de vítimas resgatadas.",
+                explanation: "A alternativa C está correta. Na marcação estrutural do BREC, o numeral no lado esquerdo externo do quadrado representa o número de vítimas resgatadas.",
                 difficulty: "hard",
                 category: "Profissional"
             },
@@ -1367,41 +1330,41 @@
                 id: 39,
                 question: "Durante avaliação de um paciente com suspeita de Acidente Vascular Encefálico (AVE), o teste para Escala de Cincinnati avalia os seguintes aspectos, EXCETO:",
                 options: [
-                    "Mímica facial",
-                    "Déficit na fala",
-                    "Fibrilação atrial",
-                    "Queda do braço"
+                    "Mímica facial.",
+                    "Déficit na fala.",
+                    "Fibrilação atrial.",
+                    "Queda do braço."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está incorreta, pois a fibrilação atrial não é avaliada pela Escala de Cincinnati, que avalia mímica facial, déficit na fala e queda do braço.",
+                explanation: "A alternativa C está incorreta. A Escala de Cincinnati avalia: Assimetria facial (mímica), Força muscular nos braços (queda do braço) e Fala (déficit na fala). Fibrilação atrial não faz parte desta escala.",
                 difficulty: "easy",
                 category: "Profissional"
             },
             {
                 id: 40,
-                question: "Em decorrência de grandes ocorrências atendidas pelo CBMMG nos últimos anos, confirmou-se a necessidade de organização pessoal, logística e de planejamento para que se chegue a um resultado mais eficiente. Conforme Manual de Gerenciamento de Desastres – Sistema de Comando de Operações, analise as afirmativas a seguir como 'V' para VERDADEIRAS, 'F' para FALSAS e assinale a alternativa que apresenta a SEQUÊNCIA CORRETA. I - O coordenador de segurança faz parte do staff/assessoria do comando e é o responsável por avaliar e monitorar constantemente condições inseguras de trabalho no local da operação. II - O coordenador da secretaria faz parte do staff/assessoria e é o responsável pelo enlace (contatos externos) com os representantes dos organismos que estão auxiliando e cooperando com a operação, especialmente aqueles que não estão no posto de comando e autoridades políticas. III - A área de concentração de vítimas é o local onde os vitimados pela situação crítica são reunidos, triados e recebem atendimento inicial até serem transportadas para estabelecimentos hospitalares.",
+                question: "Em decorrência de grandes ocorrências atendidas pelo CBMMG nos últimos anos, confirmou-se a necessidade de organização pessoal, logística e de planejamento para que se chegue a um resultado mais eficiente. Conforme Manual de Gerenciamento de Desastres – Sistema de Comando de Operações, analise as afirmativas a seguir como 'V' para VERDADEIRAS, 'F' para FALSAS e assinale a alternativa que apresenta a SEQUÊNCIA CORRETA.<br><br>I - O coordenador de segurança faz parte do staff/assessoria do comando e é o responsável por avaliar e monitorar constantemente condições inseguras de trabalho no local da operação.<br>II - O coordenador da secretaria faz parte do staff/assessoria e é o responsável pelo enlace (contatos externos) com os representantes dos organismos que estão auxiliando e cooperando com a operação, especialmente aqueles que não estão no posto de comando e autoridades políticas.<br>III - A área de concentração de vítimas é o local onde os vitimados pela situação crítica são reunidos, triados e recebem atendimento inicial até serem transportadas para estabelecimentos hospitalares.",
                 options: [
-                    "V,V,V",
-                    "V,F,V",
-                    "F,F,F",
-                    "F,V,F"
+                    "V,V,V.",
+                    "V,F,V.",
+                    "F,F,F.",
+                    "F,V,F."
                 ],
                 correct: 1,
-                explanation: "A sequência correta é V,F,V. A afirmativa II é falsa, pois o coordenador da secretaria não é responsável pelo enlace com representantes externos, mas sim pela documentação e registros da operação.",
+                explanation: "Sequência: V, F, V. A I é verdadeira; a II é falsa (o coordenador de enlace/liaison officer é responsável pelos contatos externos, não o coordenador da secretaria); a III é verdadeira.",
                 difficulty: "medium",
                 category: "Profissional"
             },
             {
                 id: 41,
-                question: "As técnicas com esguicho apresentadas no Manual de Bombeiros de Combate a Incêndio Urbano combinam a angulação do jato, com as regulagens de vazão e de abertura do esguicho. É CORRETO afirmar que o conceito a seguir refere-se à técnica DENOMINADA. 'É um tipo de ataque direto que consiste em aplicação de pouca água, sem abertura total da manopla do esguicho e com a vazão mínima (30 GPM ou 115 LPM). É aplicado quando o operador está a uma pequena distância do foco e tem o objetivo de garantir a não reignição do incêndio naquele material'.",
+                question: "As técnicas com esguicho apresentadas no Manual de Bombeiros de Combate a Incêndio Urbano combinam a angulação do jato, com as regulagens de vazão e de abertura do esguicho. É CORRETO afirmar que o conceito a seguir refere-se à técnica DENOMINADA.<br><br>'É um tipo de ataque direto que consiste em aplicação de pouca água, sem abertura total da manopla do esguicho e com a vazão mínima (30 GPM ou 115 LPM). É aplicado quando o operador está a uma pequena distância do foco e tem o objetivo de garantir a não reignição do incêndio naquele material'.",
                 options: [
-                    "Pacote D'água",
-                    "Jato Mole",
-                    "Jato de Proteção",
-                    "Pulso Atomizado"
+                    "Pacote D'água.",
+                    "Jato Mole.",
+                    "Jato de Proteção.",
+                    "Pulso Atomizado."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está correta, pois a técnica descrita é o Jato Mole.",
+                explanation: "A alternativa B está correta. A técnica descrita é o 'Jato Mole', caracterizado pela aplicação de pouca água com vazão mínima para evitar reignição.",
                 difficulty: "medium",
                 category: "Profissional"
             },
@@ -1409,14 +1372,14 @@
                 id: 42,
                 question: "A autonomia do Equipamento de Proteção Respiratória (EPR) pode ser estimada matematicamente a partir do volume do cilindro, da pressão do ar e da atividade desempenhada pelo bombeiro. Em uma situação de combate a incêndio com a utilização de EPR com um cilindro de 7 litros, carregado a 200 bar e sendo executados trabalhos com um consumo médio de 20 l/min, estima-se que a tempo de autonomia, em minutos, será de:",
                 options: [
-                    "7 (sete) minutos",
-                    "10 (dez) minutos",
-                    "70 (setenta) minutos",
-                    "90 (noventa) minutos"
+                    "7 (sete) minutos.",
+                    "10 (dez) minutos.",
+                    "70 (setenta) minutos.",
+                    "90 (noventa) minutos."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está correta, pois o cálculo da autonomia é: Volume do cilindro (7L) x Pressão (200 bar) / Consumo (20 L/min) = 70 minutos.",
-                difficulty: "medium",
+                explanation: "A alternativa C está correta. Cálculo: Volume de ar = Volume do cilindro × Pressão = 7 L × 200 bar = 1400 L. Autonomia = Volume de ar / Consumo = 1400 L / 20 L/min = 70 minutos.",
+                difficulty: "easy",
                 category: "Profissional"
             },
             {
@@ -1429,7 +1392,7 @@
                     "As inspeções na roupa de proteção deverão ser executadas somente após o uso em ocorrências que possam resultar em sujidade ou danos."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está incorreta, pois as inspeções na roupa de proteção devem ser executadas regularmente, não apenas após o uso em ocorrências.",
+                explanation: "A alternativa D está incorreta porque as inspeções na roupa de proteção devem ser realizadas periodicamente, não somente após o uso em ocorrências. Inspeções regulares são necessárias para garantir a integridade do equipamento.",
                 difficulty: "medium",
                 category: "Profissional"
             },
@@ -1443,7 +1406,7 @@
                     "No caso de uma vítima com suspeita de Trauma Raquimedular com Mecanismo de Lesão Significativo que possua idade ≥ 65 anos, deve-se realizar o teste de rotação da cabeça do paciente."
                 ],
                 correct: 1,
-                explanation: "A alternativa B está correta, pois descreve adequadamente o procedimento de RMC assistido para vítimas em pé deambulando.",
+                explanation: "A alternativa B está correta. Esta é a técnica adequada para RMC em vítimas em pé e deambulando.",
                 difficulty: "medium",
                 category: "Profissional"
             },
@@ -1457,7 +1420,7 @@
                     "O esporão fornece um meio de escalada eficiente, e deverá ser utilizado no lado contrário de subida da região de poda da árvore para minimizar os danos causados pelas esporas. Um cabo com uma laçada simples ou uma boca de lobo deverá ser utilizado para auxiliar a subida e impedir a queda, caso a agarra deslize."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está correta, pois descreve adequadamente os 7 defeitos externos mais recorrentemente associados a falhas em árvores.",
+                explanation: "A alternativa C está correta. Estes são os 7 defeitos externos mais comuns associados a falhas em árvores.",
                 difficulty: "hard",
                 category: "Profissional"
             },
@@ -1470,8 +1433,8 @@
                     "Em todas as ocorrências em que houver o empenho de mais de uma viatura, o responsável pela confecção do REDS deverá lançar sua viatura como a principal e as demais viaturas como apoio, sendo que a cada viatura de apoio será atribuída uma natureza secundária, em campo próprio, de acordo com a ação desenvolvida no atendimento da ocorrência.",
                     "Ocorrência Continuada é todo fato que, de qualquer forma, afete ou possa afetar a ordem pública, exigindo a intervenção Policial e/ou de Bombeiro Militar por meio de ações e/ou operações, compreendendo ocorrências típicas e atípicas. A comunicação do fato pode ser por solicitação de qualquer pessoa ou em cumprimento a requisição de autoridade competente para este ato."
                 ],
-                correct: 3,
-                explanation: "A alternativa D está incorreta, pois a definição apresentada é de 'Ocorrência', não de 'Ocorrência Continuada'.",
+                correct: 2,
+                explanation: "A alternativa C está incorreta porque não é em TODAS as ocorrências com mais de uma viatura que se define uma como principal e outras como apoio. A definição depende do papel de cada viatura na ocorrência, e nem sempre há uma viatura claramente 'principal'.",
                 difficulty: "medium",
                 category: "Profissional"
             },
@@ -1479,27 +1442,27 @@
                 id: 47,
                 question: "Segundo os critérios e condições para classificação de níveis de risco das edificações, espaço destinado ao uso coletivo, empresas e atividades, uma edificação ou espaço destinado ao uso coletivo com lotação de 200 (duzentas) pessoas, SERÁ CLASSIFICADA em:",
                 options: [
-                    "Nível de Risco I",
-                    "Nível de Risco II",
-                    "Nível de Risco III",
-                    "Nível de Risco IV"
+                    "Nível de Risco I.",
+                    "Nível de Risco II.",
+                    "Nível de Risco III.",
+                    "Nível de Risco IV."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está correta, pois edificações com lotação de 200 pessoas são classificadas como Nível de Risco III.",
-                difficulty: "medium",
+                explanation: "A alternativa C está correta. Edificações com lotação entre 101 e 500 pessoas são classificadas como Nível de Risco III conforme normas técnicas do CBMMG.",
+                difficulty: "easy",
                 category: "Profissional"
             },
             {
                 id: 48,
-                question: "Considerando a Instrução Técnica nº 17 - Sistema de Hidrantes e Mangotinhos, julgue as afirmativas e assinale a alternativa CORRETA. I - Os abrigos devem ser em cor vermelha ou constituídos por material transparente, possuindo apoio ou fixação própria, independente da tubulação que abastece o hidrante ou mangotinho. II - Preferencialmente o dispositivo de recalque deve ser instalado de fronte ao acesso principal da edificação. III - Especificamente nas ocupações Residenciais (A-2 e A-3), quando o trajeto real da mangueira de incêndio ultrapassar a 30 metros, poderá ser admitida a utilização de até 45 metros de mangueiras, desde que atenda os demais parâmetros desta IT. IV - O alcance do jato para esguicho regulável produzido por qualquer sistema adotado conforme tabela 2 não deve ser inferior a 8 m, medido da saída do esguicho ao ponto de queda do jato, com o jato paralelo ao solo com o esguicho regulado para jato compacto.",
+                question: "Considerando a Instrução Técnica nº 17 - Sistema de Hidrantes e Mangotinhos, julgue as afirmativas e assinale a alternativa CORRETA.<br><br>I - Os abrigos devem ser em cor vermelha ou constituídos por material transparente, possuindo apoio ou fixação própria, independente da tubulação que abastece o hidrante ou mangotinho.<br>II - Preferencialmente o dispositivo de recalque deve ser instalado de frente ao acesso principal da edificação.<br>III - Especificamente nas ocupações Residenciais (A-2 e A-3), quando o trajeto real da mangueira de incêndio ultrapassar a 30 metros, poderá ser admitida a utilização de até 45 metros de mangueiras, desde que atenda os demais parâmetros desta IT.<br>IV - O alcance do jato para esguicho regulável produzido por qualquer sistema adotado conforme tabela 2 não deve ser inferior a 8 m, medido da saída do esguicho ao ponto de queda do jato, com o jato paralelo ao solo com o esguicho regulado para jato compacto.",
                 options: [
-                    "Apenas as alternativas I e II são verdadeiras",
-                    "Apenas as alternativas II, III e IV são verdadeiras",
-                    "Nenhuma das alternativas é verdadeira",
-                    "Todas as alternativas são verdadeiras"
+                    "Apenas as alternativas I e II são verdadeiras.",
+                    "Apenas as alternativas II, III e IV são verdadeiras.",
+                    "Nenhuma das alternativas é verdadeira.",
+                    "Todas as alternativas são verdadeiras."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está correta, pois todas as afirmativas estão de acordo com a Instrução Técnica nº 17.",
+                explanation: "Todas as afirmativas I, II, III e IV são verdadeiras de acordo com a Instrução Técnica nº 17 do CBMMG.",
                 difficulty: "hard",
                 category: "Profissional"
             },
@@ -1513,7 +1476,7 @@
                     "Planejamento com base em pesquisas e estudos sobre áreas de risco e incidência de desastres no território nacional."
                 ],
                 correct: 2,
-                explanation: "A alternativa C está incorreta, pois a PNPDEC não estabelece prioridade às ações de reconstrução, mas sim uma abordagem equilibrada entre prevenção, mitigação, preparação, resposta e recuperação.",
+                explanation: "A alternativa C está incorreta porque a PNPDEC prioriza ações de prevenção e mitigação, não de reconstrução. A reconstrução é uma fase posterior, mas a prioridade é evitar que os desastres ocorram ou reduzir seus impactos.",
                 difficulty: "medium",
                 category: "Profissional"
             },
@@ -1521,13 +1484,13 @@
                 id: 50,
                 question: "As medidas de caráter emergencial, executadas durante ou após a ocorrência do desastre, destinadas a socorrer e assistir a população atingida e restabelecer os serviços essenciais, REFEREM-SE às:",
                 options: [
-                    "Ações de mitigação",
-                    "Ações de preparação",
-                    "Ações de recuperação",
-                    "Ações de resposta"
+                    "Ações de mitigação.",
+                    "Ações de preparação.",
+                    "Ações de recuperação.",
+                    "Ações de resposta."
                 ],
                 correct: 3,
-                explanation: "A alternativa D está correta, pois as ações descritas referem-se às ações de resposta no ciclo de gestão de desastres.",
+                explanation: "A alternativa D está correta. As ações de resposta são as medidas emergenciais executadas durante ou logo após o desastre para socorrer vítimas e restabelecer serviços essenciais.",
                 difficulty: "easy",
                 category: "Profissional"
             }
@@ -1750,11 +1713,11 @@
             // Mensagem personalizada baseada no desempenho
             let message = '';
             if (scorePercentage >= 90) {
-                message = 'Excelente! Você demonstrou domínio completo do conteúdo do EAP. Continue assim!';
+                message = 'Excelente! Você demonstrou domínio completo do conteúdo do EAP 2022. Continue assim!';
             } else if (scorePercentage >= 70) {
-                message = 'Bom trabalho! Você tem um bom conhecimento, mas ainda pode melhorar em algumas áreas.';
+                message = 'Bom trabalho! Você tem um bom conhecimento do conteúdo exigido no EAP 2022.';
             } else if (scorePercentage >= 50) {
-                message = 'Resultado regular. Recomenda-se revisar os conteúdos com mais atenção antes do exame.';
+                message = 'Resultado regular. Recomenda-se revisar os conteúdos com mais atenção.';
             } else {
                 message = 'É necessário estudar mais. Recomenda-se dedicar mais tempo à preparação para o EAP.';
             }
